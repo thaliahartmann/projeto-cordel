@@ -130,7 +130,13 @@ section#img02 {
     background-attachment: fixed;
 }
 
-
+/* ✅ no celular desativa o paralax (iOS não suporta) */
+@media (max-width: 768px) {
+    section#img01,
+    section#img02 {
+        background-attachment: scroll;
+    }
+}
 footer {
     background-color: var(--cor0);
     font-family: var(--fonte-extra);
