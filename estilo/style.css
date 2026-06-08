@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
-
+/* ----------------------------------------------------------
+    Globais
+---------------------------------------------------------- */
 
 * {
     margin: 0;
@@ -25,7 +27,7 @@ html, body {
 }
 
 /* ----------------------------------------------------------
-   HEADER
+   Headers
 ---------------------------------------------------------- */
 
 header {
@@ -37,8 +39,7 @@ header {
 header > h1 {
     font-family: var(--fonte2);
     color: var(--cor1);
-    /* vw mantém o título em uma linha no celular */
-    font-size: clamp(1.8rem, 8vw, 7rem);
+    font-size: clamp(2.5rem, 8vw, 7rem);
     font-weight: normal;
     font-variant: small-caps;
     padding-bottom: 10px;
@@ -47,7 +48,7 @@ header > h1 {
 header > p {
     font-family: var(--fonte1);
     color: var(--cor1);
-    font-size: clamp(0.85rem, 2vw, 1rem);
+    font-size: clamp(0.85rem, 2vw, 1.2rem);
     padding: 8px 20px 20px;
 }
 
@@ -57,7 +58,7 @@ header a:active  { color: var(--cor1); text-decoration: underline; }
 header a:hover   { color: var(--cor1); text-decoration: underline; }
 
 /* ----------------------------------------------------------
-   SECTIONS
+   Sections
 ---------------------------------------------------------- */
 
 section {
@@ -65,7 +66,7 @@ section {
     line-height: 2em;
     font-family: var(--fonte3);
     font-style: italic;
-    font-weight: bold;
+    font-weight: normal;
     /* vw mantém o texto proporcional à largura da tela */
     font-size: clamp(1rem, 2.5vw, 1.6rem);
 }
@@ -84,7 +85,7 @@ section > p:last-child {
 }
 
 /* ----------------------------------------------------------
-   SECTIONS COM IMAGEM
+   sections com imagem
 ---------------------------------------------------------- */
 
 section.imagem {
@@ -103,7 +104,7 @@ section.imagem > p {
     text-shadow: 1px 1px 0px black;
 }
 
-/* paralax ativo no desktop */
+/* paralax ativo no computador */
 section#img01 {
     background-image: url('../imagens/background001.jpg');
     background-position: right center;
@@ -119,7 +120,7 @@ section#img02 {
 }
 
 /* ----------------------------------------------------------
-   FOOTER
+   footer
 ---------------------------------------------------------- */
 
 footer {
@@ -136,7 +137,7 @@ footer a:active  { color: var(--cor1); text-decoration: underline; }
 footer a:hover   { color: var(--cor1); text-decoration: underline; }
 
 /* ----------------------------------------------------------
-   MEDIA QUERY — celular (até 768px)
+   MEDIA QUERY — celular (até 768px) (adaptável para celular)
 ---------------------------------------------------------- */
 
 @media (max-width: 768px) {
